@@ -3,11 +3,20 @@ import { Route, Routes, Link } from "react-router-dom";
 import Atoles from "./Atoles";
 import Index from "./Index";
 import Tamales from "./Tamales";
+import ShoppingCar from "./ShoppingCar";
+import styles from "./style/CarShopping.module.scss";
+
 
 const App = () => {
   console.log('Renderizando App')
   return (
     <div>
+      <div align="center">
+        <ShoppingCar /*qty={totalqty}*//>
+        <button /*onClick={onCleanAll}*/>
+            Reset
+        </button>
+      </div>
       <h1>iTamales</h1>
       <nav>
         <Link to="/">Inicio</Link>
