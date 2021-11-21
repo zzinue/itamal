@@ -7,7 +7,7 @@ import ShoppingCar from "./ShoppingCar";
 import styles from "./style/CarShopping.module.scss";
 
 
-const App = () => {
+const App = (totalqty) => {
   console.log('Renderizando App')
   return (
     <div>
