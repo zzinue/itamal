@@ -1,6 +1,6 @@
 import React, { useState, useEffect }from 'react'
 import fetchItemsIntro from '../Services/fetchItemsIndex'
-import Card from './Cards/CardIndex';
+import Card from './CardsIndex/CardIndex';
 
 const Index = () => {
   const [intros, setIntros]= useState([]);

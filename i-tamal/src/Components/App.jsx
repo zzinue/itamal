@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import { Route, Routes, Link } from "react-router-dom";
-import Atoles from "./Atoles";
+import Atoles from "./CardsAtole/Atole";
 import Index from "./Index";
-import Tamales from "./Tamales";
+import Tamales from "./CardsTamal/Tamal";
 import ShoppingCar from "./ShoppingCar";
-import styles from "./style/CarShopping.module.scss";
+// import styles from "./style/CarShopping.module.scss";
 
 
 const App = (totalqty) => {
