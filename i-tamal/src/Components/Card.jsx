@@ -3,6 +3,7 @@ import CardImage from "./Card/CardImage";
 import CardTitle from "./Card/CardTitle/CardTitle";
 import CardBody from "./Card/CardBody";
 import PrimaryButton from "./Buttons/PrimaryButton/PrimaryButton";
+import Counter from './Counter'
 
 const Card = ({ title = "Sin Título", imgUrl, text, linkBtn, oferta=false, precio=20 }) => {
 
@@ -18,7 +19,10 @@ const Card = ({ title = "Sin Título", imgUrl, text, linkBtn, oferta=false, prec
         <button onClick={()=>setOaxaqueno(false)}>Hoja de Maiz</button>
         <button onClick={()=>setOaxaqueno(true)}>Hoja de plátano</button>
         <CardBody text={text} />
+        <Counter title={title}/>
         <PrimaryButton link={linkBtn} text="Comprar" />
+          
+       
       </div>
     </div>
   );

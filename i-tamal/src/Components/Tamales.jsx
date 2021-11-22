@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import fetchItems from "../services/fetchItems"
 import Card from "./Card";
+import Counter from "./Counter";
 
 
 
