@@ -3,6 +3,7 @@ import CardImage from "./CardImageTamal";
 import CardTitle from "./CardTitle/CardTitle";
 import CardBody from "./CardBodyTamal";
 import PrimaryButton from "../Buttons/PrimaryButton/PrimaryButton";
+import CounterTamales from '../CounterTamales';
 // import ShoppingCar from "./ShoppingCar";
 // import styles from "./style/CarShopping.module.scss";
 
@@ -34,7 +35,10 @@ const Card = ({ title, imgUrl, text, linkBtn, oferta=false, precio=20 }) => {
         <button onClick={()=>setOaxaqueno(false)}>Hoja de Maiz</button>
         <button onClick={()=>setOaxaqueno(true)}>Hoja de plátano</button>
         <p>${precioFinal}</p>
+        <CounterTamales title={title}/>
         <PrimaryButton link={linkBtn} text="Comprar" />
+        
+
       </div>
     </div>
   );

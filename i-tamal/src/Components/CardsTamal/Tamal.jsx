@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import fetchItemsTamales from "../../Services/fetchItemsTamales";
-import Card from "./Tamales";
+import Card from './Tamales'
 
 const Tamales = () => {
 
