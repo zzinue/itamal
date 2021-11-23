@@ -8,13 +8,13 @@ const Atoles = () => {
   
   useEffect(() => {
     setAtoles(fetchItemsAtole)
-
   }, [])
+
 
   return (
     <div>
       {atoles.map(atole=>{
-        const { title, imgUrl, text, linkBtn }= atole
+        const { title, imgUrl, text, linkBtn } = atole
         return <Card 
                 title={title} 
                 imgUrl={imgUrl} 

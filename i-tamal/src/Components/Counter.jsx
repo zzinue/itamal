@@ -1,14 +1,13 @@
 import { useState } from "react";
-// [valor, modificarValor]
-const Counter = ({title= 'Sin Fruta'}) => {
+import PrimaryButton from "./Buttons/PrimaryButton/PrimaryButton";
 
-  console.log('función ejecutada')
+const Counter = ({title}) => {
 
   const [valor, setValor] = useState(0);
 
   const handleRestar = () => setValor(valor - 1);
   const handleSumar = () => setValor(valor + 1);
-  const handleReset = () => setValor(0);
+  // const handleReset = () => setValor(0);
 
   const colorLabel = valor < 1 ? "red" : valor <= 3 ? "orange" : "green";
   const label = valor<1 ? 'Agotado' : valor
@@ -23,7 +22,7 @@ const Counter = ({title= 'Sin Fruta'}) => {
         <span style={{ color: colorLabel }}>{label}</span>
         <button onClick={handleSumar}>+</button>
       </div>
-      <button onClick={handleReset}>Reset</button>
+      {/* <button onClick={handleReset}>Reset</button> */}
     </div>
   );
 };
